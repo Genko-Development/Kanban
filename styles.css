@@ -1,0 +1,117 @@
+header {
+    padding: 2%;
+}
+.board-text {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 5px;
+}
+
+
+
+
+.sidenav {
+    background-color: #fff;
+    border: 3px solid #F2F1F6;
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+.board-layout {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-gap: 10px;
+    height: 800px;
+}
+
+.list-layout {
+    display: grid;
+    grid-gap: 10px;
+
+}
+
+.board-lists {
+    background-color: #F5F7FB;
+    border-top: 3px solid #F2F1F6;
+
+    display: grid;
+    grid-auto-columns: 275px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    padding: 2%;
+    height: 400px;
+}
+
+.board-list {
+    border-radius: 10px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 10px;
+    /* Chrome use a fixed height */
+    height: max-content;
+    padding: 10px;
+}
+
+.list-title {
+    color: #292929;
+    
+    font-size: 1em;
+    font-weight: bold;
+
+    padding-left: 4%;
+}
+
+
+bubble{
+    color: #fff;
+    padding: 2% 3.5%;
+    border-radius: 50px;
+
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+.bubble-info{
+    background-color: #2663EA;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
+    padding: 10px;
+    cursor: pointer;
+}
+.box h5{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.box p{
+    color: #707070;
+    font-size: 0.8em;
+}
