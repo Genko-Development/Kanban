@@ -1,6 +1,10 @@
-header {
-    padding: 2%;
+.wrapper {
+    padding: 3%;
 }
+header{
+    padding: 1%;
+}
+
 .board-text {
     font-weight: bold;
     font-size: 28px;
@@ -15,31 +19,69 @@ header {
     border: 3px solid #F2F1F6;
 
     height: 100%;
-    width: 200px;
+    width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
+
 }
 
-.sidenav a {
-    padding: 6px 6px 6px 32px;
+.sidenav .logo{
+    height: 60px;
+    width: 60px;
+
+    border-radius: 5px;
+    background-color:#292929;
+
+    color: #77E8B8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    margin-right: 5%;
+}
+.sidenav .logo h4{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1em;
+}
+.sidenav .logo .logo-diff{
+    color: #71B2F4;
+}
+
+.sidenav ._nav{
+    padding: 1%;
+}
+
+.sidenav ._nav a {
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 1em;
+    color: #6F7079;
+
     display: block;
+    padding: 2% 5% 2% 2%;
+}
+.sidenav ._nav a i{
+    width: 20px;
+    font-size: 1.2em;
+    margin-right: 10%;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #5851B5;
+    background-color: #efecfd;
+    border-radius: 6px;
 }
 
 
 
 .board-layout {
-    margin-left: 200px;
+    margin-left: 300px;
     /* Same as the width of the sidenav */
 
     font-family: Arial, Helvetica, sans-serif;
@@ -61,7 +103,7 @@ header {
     border-top: 3px solid #F2F1F6;
 
     display: grid;
-    grid-auto-columns: 275px;
+    grid-auto-columns: 300px;
     grid-auto-flow: column;
     grid-gap: 10px;
     padding: 2%;
